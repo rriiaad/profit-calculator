@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Profit Calculator</title>
+  </head>
+  <body>
+    <main>
+      <h1>Profit Calculator</h1>
+      <section>
+        <div class="iteam">
+          <label for="product">Product</label>
+          <input type="text" placeholder="Product Name" id="product" />
+        </div>
+        <div class="iteam">
+          <label for="price">Price</label>
+          <input type="Number" placeholder="Price" id="price" />
+        </div>
+        <div class="spaced-display">
+          <label for="Profit">Profit</label>
+          <span id="PercentageText">0 %</span>
+        </div>
+        <input
+          class="slider"
+          type="range"
+          value="0"
+          id="Profit"
+          min="0"
+          max="100"
+        />
+        <div class="spaced-display">
+          <span>Profit</span>
+          <span id="ProfitValue">0.00 $</span>
+        </div>
+        <div class="spaced-display">
+          <span class="total">Total</span>
+          <span id="total">0.00 $</span>
+        </div>
+        <div class="button">
+          <center><button id="button">Add Product</button></center>
+        </div>
+      </section>
+      <section>
+        <h2>List of items</h2>
+        <div class="listeTitle">
+          <span>Product Name </span>
+          <span> Total Price</span>
+          <span>Profit</span>
+        </div>
+        <div class="liste">
+          <span id="Lproduct"></span>
+          <span class="p" id="Ltotal"></span>
+          <span id="Lprofit"></span>
+        </div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
